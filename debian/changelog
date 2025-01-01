@@ -1,0 +1,6 @@
+libexword (1.0.1-1) unstable; urgency=low
+
+  * import debian for this project
+  * test on ubuntu 22.04
+
+ -- Frank Zhou <feishengfei@126.com>  Wed, 01 Jan 2025 08:52:34 +0800

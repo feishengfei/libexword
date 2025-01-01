@@ -1,0 +1,33 @@
+Source: libexword
+Section:  libdevel
+Priority: optional
+Maintainer: Frank Zhou <feishengfei@126.com>
+Build-Depends: debhelper, 
+    dh-autoreconf,
+    autoconf,
+    automake,
+    doxygen,
+    libtool,
+    libusb-1.0-0-dev
+Standards-Version: 4.5.0
+homepage: https://github.com/brijohn/libexword
+
+
+Package: libexword
+Section: libs
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: library for transfering files over USB to casio EX-word electronic dictionaries
+ libexword is a library that implements the low-level OBEX commands
+ used to communicate Casio EX-word dictionaries. 
+ .
+ This library comes with a program called exword that uses libexword
+ to allow manipulation of files on the dictionary.
+ .
+ Features:
+ * list files on device
+ * upload/download files
+ * delete files
+ * install/remove add-on dictionaries
